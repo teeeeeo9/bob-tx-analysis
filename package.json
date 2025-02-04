@@ -1,0 +1,17 @@
+{
+  "name": "file-store-csv-example",
+  "private": true,
+  "scripts": {},
+  "dependencies": {
+    "@subsquid/evm-abi": "^0.3.0",
+    "@subsquid/evm-processor": "^1.19.1",
+    "@subsquid/evm-typegen": "4.2.0",
+    "@subsquid/file-store-csv": "^1.2.1",
+    "dotenv": "^16.4.5"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "typechain": "^8.3.2",
+    "typescript": "~5.5.2"
+  }
+}
