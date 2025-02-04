@@ -195,7 +195,7 @@ def create_transaction_volume_table(data_file, num_bins=10):
         above_upper_bound_count = df['output_value_sat'][df['output_value_sat'] > upper_bound].count()
         above_upper_bound_row = pd.DataFrame({'volume_bin': [f'Above {upper_bound}'], 'transaction_count': [above_upper_bound_count]})
         volume_counts = pd.concat([volume_counts, above_upper_bound_row], ignore_index=True)
-        print(volume_counts.to_markdown(index=False, numalign="left", stralign="left"))
+        # print(volume_counts.to_markdown(index=False, numalign="left", stralign="left"))
 
         # Create the Altair bar chart
         chart = alt.Chart(volume_counts).mark_bar().encode(
